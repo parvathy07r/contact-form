@@ -23,12 +23,14 @@
 
         <div class="first-name">
           <div class="label">First Name *</div>
-          <input type="text">
+          <input type="text" id="first_name">
+          <div class="firstname-error"></div>
         </div>
 
         <div class="last-name">
           <div class="label">Last Name *</div>
-          <input type="text">
+          <input type="text" id="last_name">
+          <div class="lastname-error"></div>
         </div>
         <!-- This field is required -->
         <!-- This field is required -->
@@ -37,7 +39,8 @@
       <div class="email-address">
 
         <div class="label">Email Address *</div>
-        <input type="text">
+        <input type="text" id="email_address">
+        <div class="email-error"></div>
         <!-- Please enter a valid email address
         This field is required -->
       </div>
@@ -48,13 +51,15 @@
 
         <div class="query-types">
           <div class="general-enquiry">
-            <input type="radio">General Enquiry
+            <input type="radio" id="general_enquiry">General Enquiry
           </div>
 
           <div class="support-request">
-            <input type="radio">Support Request
+            <input type="radio" id="support_request">Support Request
           </div>
         </div>
+
+        <div class="query-error"></div>
 
         <!-- Please select a query type  -->
       </div>
@@ -62,13 +67,15 @@
       <div class="message-field">
         <div class="label">Message *</div>
         <textarea name="message" id="message"></textarea>
+        <div class="message-error"></div>
         <!-- This field is required -->
       </div>
       <div class="checkbox">
-        <input type="checkbox">
+        <input type="checkbox" id="checkbox_field">
         I consent to being contacted by the team
-        To submit this form, please consent to being contacted
+        <div class="checkbox_error"></div>
       </div>
+
       <div class="button">
         <button class="submit-button">Submit</button>
       </div>
