@@ -1,43 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./styles.css">
-  
+
   <title>Contact form</title>
 
 </head>
+
 <body>
 
-  Contact Us
+  <div class="wrapper">
 
-  First Name
-  This field is required
+    <form action="" id="form_data">
 
-  Last Name
-  This field is required
+      <div class="contact-us-heading">Contact Us</div>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+      <div class=" name">
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+        <div class="first-name">
+          <div class="label">First Name *</div>
+          <input type="text">
+        </div>
 
-  Message
-  This field is required
+        <div class="last-name">
+          <div class="label">Last Name *</div>
+          <input type="text">
+        </div>
+        <!-- This field is required -->
+        <!-- This field is required -->
+      </div>
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+      <div class="email-address">
 
-  Submit
+        <div class="label">Email Address *</div>
+        <input type="text">
+        <!-- Please enter a valid email address
+        This field is required -->
+      </div>
 
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
+      <div class="query-type">
+
+        <div class="label">Query Type *</div>
+
+        <div class="query-types">
+          <div class="general-enquiry">
+            <input type="radio">General Enquiry
+          </div>
+
+          <div class="support-request">
+            <input type="radio">Support Request
+          </div>
+        </div>
+
+        <!-- Please select a query type  -->
+      </div>
+
+      <div>
+        <div class="label">Message *</div>
+        <textarea name="message" id="message"></textarea>
+        <!-- This field is required -->
+      </div>
+      <div>
+        <input type="checkbox">
+        I consent to being contacted by the team
+        To submit this form, please consent to being contacted
+      </div>
+      <div class="button">
+        <button class="submit-button">Submit</button>
+      </div>
+
+    </form>
+
+  </div>
+
+  <!-- Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+
+  <script src="./script.js"></script>
+
 </body>
+
 </html>
