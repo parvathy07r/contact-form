@@ -26,8 +26,7 @@ formData.addEventListener("submit", function(event) {
     if(isValid) {
        successMessage.style.display = "inline-flex";
     }
-
-    
+  
 });
 
 function validateFields(firstName, lastName, emailAddress, generalEnquiry, supportRequest, message, checkbox) {
@@ -35,40 +34,40 @@ function validateFields(firstName, lastName, emailAddress, generalEnquiry, suppo
     let isValid = true;
 
     if(!firstName) {
-        firstNameError.innerHTML = "This field is required";
-        isValid = false;
+        isValid = setError(firstNameError, "This field is required",);
     }
 
     if(!lastName) {
-        lastNameError.innerHTML = "This field is required";
-        isValid = false;
+        isValid =  setError(lastNameError, "This field is required");
     }
 
     if(!emailAddress) {
-        emailAddressError.innerHTML = "This field is required";
-        isValid = false;
+        isValid = setError(emailAddressError, "This field is required");
     }
 
     if(!generalEnquiry && !supportRequest) {
-        queryError.innerHTML = "Please select a query type";
-        isValid = false;
+        isValid = setError(queryError, "Please select a query type")
     }
 
     if(!message) {
-        messageError.innerHTML = "This field is required";
-        isValid = false;
+        isValid = setError(messageError, "This field is required");
     }
 
     if(!checkbox) {
-        checkboxError.innerHTML = "To submit this form, please consent to being contacted";
-        isValid = false;
+        isValid = setError(checkboxError, "To submit this form, please consent to being contacted");
     }
 
     if(!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(emailAddress)) {
-        emailAddressError.innerHTML = "Please enter a valid email address";
-        isValid = false;
+        isValid = setError(emailAddressError, "Please enter a valid email address");
     }
 
     return isValid;
 
+}
+
+function setError(errorElement, errorMessage) {
+
+    errorElement.innerHTML = errorMessage;
+    return false;
+    
 }

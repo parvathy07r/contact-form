@@ -16,7 +16,6 @@ form {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-    border: 1px solid red;
     padding: 16px;
 }
 
