@@ -9,14 +9,15 @@ html, body {
 }
 
 .wrapper {
-    border: 1px solid red;
-    padding: 16px;
+    padding: 94px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+    border: 1px solid red;
+    padding: 16px;
 }
 
 .name {
@@ -44,6 +45,31 @@ form {
 
 .firstname-error, .lastname-error, .email-error, .query-error, .message-error, .checkbox_error {
     color: red;
+}
+
+.success-message {
+    background-color: hsl(187, 24%, 22%);
+    color: white;
+    width: 332px;
+    font-size: 14px;
+    padding: 8px 24px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    position: relative;
+    bottom: 623px;
+    left: 427px;
+    border-radius: 10px;
+    display: none;
+}
+
+img {
+    width: 10px;
+}
+
+.icon-and-message-style {
+    display: flex;
+    column-gap: 8px;
 }
 
 
