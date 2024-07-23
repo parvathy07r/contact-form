@@ -15,6 +15,13 @@
 
   <div class="wrapper">
 
+    <div class="success-message">
+
+          <div><img src="./assets/images/icon-success-check.svg" alt=""> Message Sent!</div>
+          
+      <div>Thanks for completing the form. We'll be in touch soon!</div>
+    </div>
+
     <form action="" id="form_data">
 
       <div class="contact-us-heading">Contact Us</div>
@@ -32,8 +39,7 @@
           <input type="text" id="last_name">
           <div class="lastname-error"></div>
         </div>
-        <!-- This field is required -->
-        <!-- This field is required -->
+
       </div>
 
       <div class="email-address">
@@ -41,8 +47,7 @@
         <div class="label">Email Address *</div>
         <input type="text" id="email_address">
         <div class="email-error"></div>
-        <!-- Please enter a valid email address
-        This field is required -->
+
       </div>
 
       <div class="query-type">
@@ -51,24 +56,24 @@
 
         <div class="query-types">
           <div class="general-enquiry">
-            <input type="radio" id="general_enquiry">General Enquiry
+            <input type="radio" id="general_enquiry" name="question">General Enquiry
           </div>
 
           <div class="support-request">
-            <input type="radio" id="support_request">Support Request
+            <input type="radio" id="support_request" name="question">Support Request
           </div>
         </div>
 
         <div class="query-error"></div>
 
-        <!-- Please select a query type  -->
+
       </div>
 
       <div class="message-field">
         <div class="label">Message *</div>
         <textarea name="message" id="message"></textarea>
         <div class="message-error"></div>
-        <!-- This field is required -->
+
       </div>
       <div class="checkbox">
         <input type="checkbox" id="checkbox_field">
@@ -84,18 +89,7 @@
 
   </div>
 
-  <div class="success-message">
-    <!-- <div class="icon-and-message-style"> -->
-      <!-- <div> -->
-        <div><img src="./assets/images/icon-success-check.svg" alt=""> Message Sent!</div>
-        
-      <!-- </div> -->
-      <!-- <div> -->
-       
-      <!-- </div> -->
-    <!-- </div> -->
-    <div>Thanks for completing the form. We'll be in touch soon!</div>
-  </div>
+  
 
   <script src="./script.js"></script>
 

@@ -11,15 +11,22 @@ html, body {
 }
 
 .wrapper {
-    padding: 94px;
     font-family: "Karla", sans-serif;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 form {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+    border: 1px solid black;
     padding: 16px;
+    font-size: 12px
 }
 
 .name {
@@ -53,15 +60,13 @@ form {
     background-color: hsl(187, 24%, 22%);
     color: white;
     width: 332px;
-    font-size: 14px;
-    padding: 8px 24px 8px 8px;
+    font-size: 11px;
+    padding: 14px 24px 14px 14px;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    position: relative;
-    bottom: 623px;
-    left: 427px;
     border-radius: 10px;
+    position: relative;
     display: none;
 }
 
@@ -72,6 +77,31 @@ img {
 .icon-and-message-style {
     display: flex;
     column-gap: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 8px 0px;
+    font-size: 10px;
+    color: white;
+    background-color: hsl(169, 82%, 27%);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+input:hover, textarea:hover {
+    cursor: pointer;
+    outline-color: hsl(169, 82%, 27%);
+}
+
+.contact-us-heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type = "radio"], input[type = "checkbox"] {
+    accent-color: green;
 }
 
 

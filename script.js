@@ -6,6 +6,7 @@ const queryError = document.querySelector(".query-error");
 const messageError = document.querySelector(".message-error");
 const checkboxError = document.querySelector(".checkbox_error");
 const successMessage = document.querySelector(".success-message");
+const wrapper = document.querySelector(".wrapper");
 
 
 formData.addEventListener("submit", function(event) {
@@ -24,7 +25,7 @@ formData.addEventListener("submit", function(event) {
     isValid = validateFields( firstName, lastName, emailAddress, generalEnquiry, supportRequest, message, checkbox);
 
     if(isValid) {
-       successMessage.style.display = "inline-flex";
+        successMessage.style.display = "inline-flex";
     }
   
 });
@@ -69,5 +70,5 @@ function setError(errorElement, errorMessage) {
 
     errorElement.innerHTML = errorMessage;
     return false;
-    
+
 }
