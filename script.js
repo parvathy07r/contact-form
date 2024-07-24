@@ -15,9 +15,9 @@ formData.addEventListener("submit", function(event) {
 
     //extracting input values
     const form = event.target;
-    const firstName = form["first_name"].value;
-    const lastName = form["last_name"].value;
-    const emailAddress = form["email_address"].value;
+    const firstName = form["fname"].value;
+    const lastName = form["lname"].value;
+    const emailAddress = form["email"].value;
     const generalEnquiry = form.querySelector("#general_enquiry").checked;
     const supportRequest = form.querySelector("#support_request").checked;
     const message = form["message"].value;
@@ -77,7 +77,7 @@ function validateFields(firstName, lastName, emailAddress, generalEnquiry, suppo
 
     //checking the email address is in wrong format
 
-    if(!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(emailAddress)) {
+    if(emailAddress && !/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(emailAddress)) {
         isValid = setError(emailAddressError, "Please enter a valid email address");
     }
 
